@@ -7,6 +7,37 @@
     <title>JS Task</title>
 </head>
 <body>
-    
+    <form action="">
+        <label for="Total Bill Amount">Total Bill Amount:</label>
+        <input type="text" id="tba" name="Total Bill Amount">
+        <br>
+        <br>
+        <label for="Percentage">Percentage Bill Tipped:</label>
+        <input type="text" id="percent" name="Percentage">
+        <br>
+        <br>
+        <label for="Number">Number of People:</label>
+        <input type="text" id="num" name="Number">
+        <br>
+        <br>
+        <input type="submit" id="button">
+        <br>
+        <br>
+        <label for="Output">Total Tip:</label>
+        <input type="text" name="Output" id="Output">
+    </form>
+    <script>
+        function tipCalc() {
+            let bill = document.getElementById('tba');
+            let per = document.getElementById('percent');
+            let num = document.getElementById('num');
+            let billTip = ((per/100)*bill)/num;
+            console.log('Total Bill Tipped is: ', billTip)
+            let output = document.getElementById('Output');
+            output = '';
+            output.value = billTip.toString();
+        }
+        document.getElementById('button').addEventListener("click", tipCalc)
+    </script>
 </body>
 </html>
