@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    
+    <main>
+        <div class="heading">
+        <h1>Tip calculator</h1>
+        </div>
+        <div class="tip">
+           
+            <label>Bill amount:</label><br>
+            <input type="number" name="" id="billAmount"><br>
+            <label>Percent of Bill:</label><br>
+            <input type="number" name="" id="percBill"><br>
+            <label>Total number of customers:</label><br>
+            <input type="number" name="" id="numPeople"><br>
+            <label>Total tip</label><br>
+            <input type="number" name="" id="totaltip" disabled><br>
+            <button onclick="tipcalc()">Calculate</button>
+        </div>
+    </main>
+    <script>
+        function tipcalc() {
+            let amount = document.getElementById('billAmount').value;
+            let perc = document.getElementById('percBill').value;
+            let num = document.getElementById('numPeople').value;
+            let tip = ((perc/100) * amount)/num;
+            document.getElementById('totaltip').value = tip;
+
+        }
+    </script>
+</body>
+</html>
