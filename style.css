@@ -4,3 +4,7 @@ main {
     justify-content: space-around;
     flex-direction: column;
 }
+
+body {
+    background-color: aqua;
+}
