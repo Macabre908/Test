@@ -6,25 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <main>
         <div class="heading">
-        <h1>Tip calculator</h1>
+        <h1>TIP CALCULATOR</h1>
         </div>
+        <div class="calculator">
         <div class="tip">
+        <div class="label">
            
-            <label>Total Bill amount:</label><br>
-            <input type="number" name="Bill Amount" id="billAmount"><br>
-            <label>Percentage:</label><br>
-            <input type="number" name="Bill Percentage" id="percBill"><br>
-            <label>Total Customers:</label><br>
-            <input type="number" name="Number Of People" id="numPeople"><br>
-            <label>Total Tip</label><br>
-            <input type="number" name="Output" id="totaltip" disabled><br>
-            <button onclick="tipcalc()">Calculate</button>
+            <label class="label">Total Bill amount:</label>
+            <br><br>
+            <label class="label">Percentage:</label>
+            <br><br>
+            <label class="label">Total Customers:</label>
+            <br><br>
+            <label class="label">Total Tip</label>
+            <br><br>
         </div>
+
+        <div class="input">
+            <input class="field" type="number" name="Bill Amount" id="billAmount"><br><br>
+            <input class="field" type="number" name="Bill Percentage" id="percBill"><br><br>
+            <input class="field" type="number" name="Number Of People" id="numPeople"><br><br>
+            <input class="field" type="number" name="Output" id="totaltip" disabled><br><br>
+        </div>
+        </div>
+        <div class="button"><button onclick="tipcalc()">Calculate</button></div>
+    </div>
     </main>
     <script>
         function tipcalc() {
